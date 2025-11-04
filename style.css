@@ -1,0 +1,155 @@
+body{
+    font-family: 'Courier New', monospace;
+    background-color: #1a1a2e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.ui{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+
+}
+
+#grid{
+    height: 432px;
+    width: 480px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5) inset, 0 1px 0 #fff;
+    display: flex;
+    flex-wrap: wrap;
+    background: url('images/background.png');
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#grid div{
+    height: 48px;
+    width: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.link-going-left , .link-going-right, .link-going-down, .link-going-up{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.link-going-left{
+    background-image:url('images/player-left.png');
+}
+
+.link-going-right{
+    background-image:url('images/player-right.png');
+}
+
+.link-going-down{
+    background-image:url('images/player-down.png');
+}
+
+.link-going-up{
+    background-image:url('images/player-up.png');
+}
+
+
+
+.left-wall{
+    background-image:url('images/left-wall.png');
+}
+
+.top-wall{
+    background-image:url('images/top-wall.png');
+}
+
+.bottom-wall{
+    background-image:url('images/bottom-wall.png');
+}
+
+.right-wall{
+    background-image:url('images/right-wall.png');
+}
+
+.bottom-left-wall{
+    background-image:url('images/bottom-left-wall.png');
+}
+
+.bottom-right-wall{
+    background-image:url('images/bottom-right-wall.png');
+}
+
+.top-left-wall{
+    background-image:url('images/top-left-wall.png');
+}
+
+.top-right-wall{
+    background-image:url('images/top-right-wall.jpg');
+}
+
+.top-door{
+    background-image:url('images/top-door.png');
+}
+
+.left-door{
+    background-image:url('images/left-door.png');
+}
+
+.stairs{
+    background-image:url('images/stairs.png');
+}
+
+.fire-pot{
+    background-image:url('images/fire-pot.png');
+}
+
+.lanterns{
+    background-image:url('images/lantern.png');
+}
+
+.slicer , .skeletor{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    z-index: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slicer{
+    background-image:url('images/slicer.png');
+}
+
+.skeletor{
+    background-image:url('images/skeletor.png');
+}
+
+.kaboom{
+    background-image:url('images/kaboom.png');
+}
+
+#temp-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 180px;
+    transform: translate(-50%, -50%);
+    padding: 15px 25px ;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 20;
+    pointer-events: none;
+    background: rgba(0,0,0,0.8);
+}
